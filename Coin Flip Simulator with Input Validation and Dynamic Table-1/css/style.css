@@ -1,0 +1,18 @@
+/*
+  Assignment: Chapter 4 Physics Projectile App
+  Author: James Sekcienski
+  Date: 7/24/2020
+  Credit: Based on Physics Projectile App in Chapter 4 of Building 
+    Cross-Platform Mobile and Web Apps for Engineers and Scientists: An Active
+    Learning Approach , 1st Edition by Pawan Lingras; Matt Triff; Rucha Lingras
+  Purpose: This is to apply custom style settings
+*/
+
+/* Table Formatting */
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 5px;
+}

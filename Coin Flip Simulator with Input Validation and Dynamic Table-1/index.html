@@ -1,0 +1,46 @@
+<!--
+  Assignment: Week 4 Lab 4
+  Author: Kylie Gregory
+  Date: 8/1/2020
+  Purpose: This page allows the user to enter in a number of trials, and in each trial two digital coins will be flipped. The results of the flips for Coin 1 and Coin 2 for each trial will appear in a table.
+-->
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Flip Simulator App</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--JavaScript-->
+    <script src="scripts/jquery-1.8.3.min.js"></script>
+    <script src="scripts/chromeFileProtocolFix.js"></script>
+    <script src="scripts/jquery.mobile-1.3.1.min.js"></script>
+    <script src="scripts/coinFlip.js"></script>
+  </head>
+
+  <body onload="initialize();">
+    <div data-role="page">
+      <div data-role="header">
+        <h1>Coin Flip</h1>
+      </div>
+
+      <div data-role="content">
+        <label for="numFlips">Number of Coin Flips (2 coins each)</label>
+        <input type="number" name="numFlips" id="numFlips" min="1" max="100">
+        <br>
+
+        <button id="coinFlip" onclick="validateFlips();">Flip Coins</button>
+        <br>
+
+        <table id="data" border="1" cellpadding="2">
+        </table>
+      </div>
+    </div>
+  </body>
+
+</html>
